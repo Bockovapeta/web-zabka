@@ -27,7 +27,7 @@ body
     border-radius: 10px
     transition: all 0.5s
     &:hover
-        background-color: darken($buttons, 45%)
+        background-color: darken($buttons, 15%)
         font-size: 15px
 
 .input
@@ -35,6 +35,43 @@ body
     padding: 20px 25px
     border-radius: 10px
     font-size: 15px
+
+.overline
+    display: inline
+    position: relative
+    overflow: hidden
+    &:before
+        content: ""
+        position: absolute
+        z-index: 1
+        right: 0
+        width: 0
+        top: -5px
+        background: #efe012
+        height: 2px
+        transition-property: width
+        transition-duration: 0.2s
+        transition-timing-function: ease-out
+    &:after
+        content: ""
+        position: absolute
+        z-index: 1
+        right: 0
+        width: 0
+        bottom: -5px
+        background: #efe012
+        height: 2px
+        transition-property: width
+        transition-duration: 0.2s
+        transition-timing-function: ease-out
+    &:hover:before
+        left: 0
+        right: auto
+        width: 100%
+    &:hover:after
+        left: 0
+        right: auto
+        width: 100%
 
 .section-title
     font-size: 30px
@@ -117,12 +154,10 @@ body
         text-decoration: none
         +bold
         font-size: 20px
-        transition: all 0.5s
+        transition: font-size 0.5s
         color: #ffffff
         &:hover, &:active
             font-size: 150%
-            color: #9da1cf
-            text-decoration: overline 5px
 
 .main
     background-color: $grey
@@ -306,7 +341,7 @@ body
             right: 0
             top: 0
 .portfolio
-    padding: 100px 0
+    padding: 0
     background: $grey url('../img/portfolio-bg.png') left repeat-y
     background-size: 50%
     @media (max-width: 768px)
@@ -317,7 +352,7 @@ body
     &__arrows
         max-width: 120px
         display: flex
-        justify-content: center
+        justify-content: space-between
         margin: auto
         margin-top: 40px
 

@@ -30,13 +30,13 @@ $(document).ready(function () {
     //var button = $('#button');
     //var modal = $('#modal');
     //var close = $('#close');
-   // button.on('click', function () {
+    // button.on('click', function () {
     //    modal.addClass('modal_active');
-   // });
+    // });
 
-   // close.on('click', function () {
-   //     modal.removeClass('modal_active');
-   // });
+    // close.on('click', function () {
+    //     modal.removeClass('modal_active');
+    // });
 
 
     // validace formulářů
@@ -65,29 +65,32 @@ $(document).ready(function () {
 
     //přidání rolování na slider - obrázky se nám po kliknutí budou přebíhat z jednoho na druhý
     $('.slider').slick({
-        slidesToShow: 3,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
         prevArrow: $('.arrows__left'),
         nextArrow: $('.arrows__right'),
 
         //odebrání zobrazených obrázků pro užší prostředí např. tablety a pro mobily
-        responsive: [
-            {
-                breakpoint: 1300,
-                settings: {
-                    slidesToShow: 2,
+        //  responsive: [
+        //       {
+        //         breakpoint: 1300,
+        //       settings: {
+        //         slidesToShow: 2,
+        //
+        //              }
+        //        },
+        //      {
+        //        breakpoint: 850,
+        ///      settings: {
+        //       slidesToShow: 1,
+        //
+        //              }
+        //        },
 
-                }
-            },
-            {
-                breakpoint: 850,
-                settings: {
-                    slidesToShow: 1,
 
-                }
-            },
-
-
-        ]
+        //  ]
     });
 
 });
