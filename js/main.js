@@ -26,6 +26,7 @@ $(document).ready(function () {
 
 
 
+
     // modální okno
     //var button = $('#button');
     //var modal = $('#modal');
@@ -65,6 +66,7 @@ $(document).ready(function () {
 
     //přidání rolování na slider - obrázky se nám po kliknutí budou přebíhat z jednoho na druhý
     $('.slider').slick({
+        dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
