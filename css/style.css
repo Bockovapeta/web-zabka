@@ -188,7 +188,11 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 20px;
-  padding-left: 250px;
+}
+@media (min-width: 1001px) {
+  .menu-block {
+    padding-left: 250px;
+  }
 }
 .menu-list__text {
   text-decoration: none;
@@ -200,6 +204,21 @@ body {
 }
 .menu-list__text:hover, .menu-list__text:active {
   font-size: 150%;
+}
+.menu-icon {
+  width: 70px;
+  font-size: 50px;
+  color: #ffec5d;
+}
+@media (max-width: 800px) {
+  .menu-icon {
+    display: inline-block;
+  }
+}
+@media (min-width: 801px) {
+  .menu-icon {
+    display: none;
+  }
 }
 
 .portfolio {
@@ -253,7 +272,8 @@ button {
   padding: 0;
   border: none;
   border-radius: 100%;
-  background-color: #fffaaf;
+  background-color: #f7ef87;
+  transition: 0.3s;
   text-indent: -9999px;
 }
 button:hover {
@@ -261,7 +281,7 @@ button:hover {
 }
 
 li.slick-active button {
-  background-color: black;
+  background-color: #585744;
 }
 
 .slider__item img {
