@@ -285,14 +285,14 @@ body {
   position: relative;
   top: -400px;
 }
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .portfolio__arrows {
-    top: -200px;
+    top: -150px;
   }
 }
-@media (min-width: 701px) and (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 1000px) {
   .portfolio__arrows {
-    top: -300px;
+    top: -250px;
   }
 }
 
