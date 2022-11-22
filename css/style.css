@@ -115,7 +115,7 @@ body {
 
 .header {
   padding: 20px 0px;
-  background: linear-gradient(0deg, rgb(6, 6, 1) 0%, #eaf09d 59%, #5ab6e1 100%);
+  background: linear-gradient(0deg, rgb(6, 6, 1) 0%, #eef3b2 59%, #99cbe2 100%);
 }
 .header-block {
   display: flex;
@@ -228,7 +228,7 @@ body {
 .menu-icon {
   width: 70px;
   font-size: 50px;
-  color: #ffec5d;
+  color: #fff49d;
   padding: 5px;
   cursor: pointer;
 }
