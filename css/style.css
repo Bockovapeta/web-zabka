@@ -28,12 +28,12 @@ body {
 }
 @media (max-width: 900px) {
   .container {
-    width: 90%;
+    width: 95%;
   }
 }
 
 .button {
-  background-color: #efe012;
+  background-color: #e2d95a;
   color: #333;
   border: none;
   font-family: "Museo Sans Bold", sans serif;
@@ -44,7 +44,7 @@ body {
   transition: all 0.5s;
 }
 .button:hover {
-  background-color: #a99e0b;
+  background-color: #ded444;
   font-size: 15px;
 }
 
@@ -114,7 +114,7 @@ body {
 
 .header {
   padding: 20px 0px;
-  background: linear-gradient(0deg, rgb(6, 6, 1) 0%, rgb(136, 142, 45) 41%, rgb(255, 244, 0) 100%);
+  background: linear-gradient(0deg, rgb(6, 6, 1) 0%, rgb(238, 249, 74) 59%, rgb(255, 252, 195) 100%);
 }
 .header-block {
   display: flex;
@@ -190,12 +190,14 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    text-align: left;
     padding: 20px;
     top: 100px;
     left: 0;
     right: 0;
     background-color: #111;
+    opacity: 80%;
   }
 }
 .menu-list__text {
@@ -217,11 +219,16 @@ body {
 .menu-list__item {
   padding: 0 20px;
 }
+@media (max-width: 900px) {
+  .menu-list__item {
+    padding-bottom: 1px;
+  }
+}
 .menu-icon {
   width: 70px;
   font-size: 50px;
   color: #ffec5d;
-  padding: 10px;
+  padding: 5px;
 }
 @media (max-width: 900px) {
   .menu-icon {
@@ -238,7 +245,7 @@ body {
 .container-menu {
   display: flex;
   align-items: center;
-  margin-right: 50px;
+  margin-right: 20px;
   justify-content: center;
 }
 @media (max-width: 900px) {

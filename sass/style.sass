@@ -15,7 +15,7 @@ body
     width: 96%
     margin: auto
     @media (max-width: 900px)
-        width: 90%
+        width: 95%
 
 .button
     background-color: $buttons
@@ -27,7 +27,7 @@ body
     border-radius: 10px
     transition: all 0.5s
     &:hover
-        background-color: darken($buttons, 15%)
+        background-color: darken($buttons, 5%)
         font-size: 15px
 
 .input
@@ -87,7 +87,7 @@ body
 
 .header
     padding: 20px 0px
-    background: linear-gradient(0deg, rgba(6,6,1,1) 0%, rgba(136,142,45,1) 41%, rgba(255,244,0,1) 100%)
+    background: linear-gradient(0deg, rgba(6,6,1,1) 0%, rgba(238,249,74,1) 59%, rgba(255,252,195,1) 100%)
     &-block
         display: flex
         justify-content: space-between
@@ -148,12 +148,15 @@ body
             position: absolute
             display: flex
             flex-direction: column
-            align-items: center
+            align-items: left
+            text-align: left
             padding: 20px
             top: 100px
             left: 0
             right: 0
             background-color: #111
+            opacity: 80%
+
     &-list__text
         text-decoration: none
         +bold
@@ -164,13 +167,16 @@ body
             font-size: 150%
         @media (max-width: 900px)
             margin-top: 1rem
+
     &-list__item
         padding: 0 20px
+        @media (max-width: 900px)
+            padding-bottom: 1px
     &-icon
         width: 70px
         font-size: 50px
         color: #ffec5d
-        padding: 10px
+        padding: 5px
         @media (max-width: 900px)
             display: inline-block
             z-index: 2
@@ -180,7 +186,7 @@ body
 .container-menu
     display: flex
     align-items: center
-    margin-right: 50px
+    margin-right: 20px
     justify-content: center
     @media (max-width: 900px)
         justify-content: end
