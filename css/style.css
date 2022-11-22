@@ -44,8 +44,9 @@ body {
   transition: all 0.5s;
 }
 .button:hover {
-  background-color: #96c4ed;
+  background-color: #175187;
   font-size: 15px;
+  color: #171ae5;
 }
 
 .input {
@@ -114,7 +115,7 @@ body {
 
 .header {
   padding: 20px 0px;
-  background: linear-gradient(0deg, rgb(6, 6, 1) 0%, #e8f167 59%, #c3ffd6 100%);
+  background: linear-gradient(0deg, rgb(6, 6, 1) 0%, #eaf09d 59%, #5ab6e1 100%);
 }
 .header-block {
   display: flex;
