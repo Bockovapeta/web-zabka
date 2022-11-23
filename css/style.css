@@ -439,7 +439,7 @@ li.slick-active button {
   width: 0;
   bottom: -5px;
   background: #efe012;
-  height: 3px;
+  height: 2px;
   transition-property: width;
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
