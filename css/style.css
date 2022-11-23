@@ -391,6 +391,7 @@ li.slick-active button {
   font-size: 30px;
   color: #000;
   line-height: 65px;
+  position: relative;
 }
 @media (max-width: 768px) {
   .main-text__subtitle {
@@ -407,6 +408,17 @@ li.slick-active button {
   .main-list__text {
     font-size: 18px;
   }
+}
+
+.after {
+  left: 0;
+  z-index: 1;
+  width: 500px;
+  background: #efe012;
+  height: 5px;
+  transition: all 0.5s;
+  margin: 0;
+  padding: 0;
 }
 
 .saratools {
