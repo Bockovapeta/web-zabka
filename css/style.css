@@ -362,8 +362,12 @@ li.slick-active button {
 @media (max-width: 1200px) {
   .main-text {
     margin-bottom: 30px;
-    text-align: center;
     margin: auto;
+  }
+}
+@media (max-width: 900px) {
+  .main-text {
+    text-align: center;
   }
 }
 .main-text__title {
@@ -391,7 +395,6 @@ li.slick-active button {
   font-size: 30px;
   color: #000;
   line-height: 65px;
-  position: relative;
 }
 @media (max-width: 768px) {
   .main-text__subtitle {
@@ -411,7 +414,6 @@ li.slick-active button {
 }
 
 .after {
-  left: 0;
   z-index: 1;
   width: 500px;
   background: #efe012;
@@ -419,6 +421,13 @@ li.slick-active button {
   transition: all 0.5s;
   margin: 0;
   padding: 0;
+}
+@media (max-width: 900px) {
+  .after {
+    text-align: center;
+    margin: auto;
+    width: 300px;
+  }
 }
 
 .saratools {

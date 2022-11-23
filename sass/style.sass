@@ -264,7 +264,6 @@ li.slick-active button
             max-height: 600px
 
 .main
-
     &-block
         display: flex
         padding: 0 0 50px 0
@@ -276,9 +275,9 @@ li.slick-active button
     &-text
         @media (max-width: 1200px)
             margin-bottom: 30px
-            text-align: center
             margin: auto
-
+        @media (max-width: 900px)
+            text-align: center
         &__title
             font-size: 50px
             color: $text-color
@@ -298,7 +297,6 @@ li.slick-active button
             font-size: 30px
             color: $text-color
             line-height: 65px
-            position: relative
             @media (max-width: 768px)
                 font-size: 25px
                 line-height: 1.4
@@ -314,7 +312,6 @@ li.slick-active button
                 font-size: 18px
 
 .after
-    left: 0
     z-index: 1
     width: 500px
     background: #efe012
@@ -322,6 +319,10 @@ li.slick-active button
     transition: all 0.5s
     margin: 0
     padding: 0
+    @media (max-width: 900px)
+        text-align: center
+        margin: auto
+        width: 300px
 
 .saratools
     color: $text-color
