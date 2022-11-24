@@ -23,7 +23,7 @@ body
     border: none
     +bold
     cursor: pointer
-    padding: 18px 47px
+    padding: 18px 20px
     border-radius: 10px
     transition: all 0.5s
     &:hover
@@ -36,6 +36,21 @@ body
     padding: 20px 25px
     border-radius: 10px
     font-size: 15px
+
+.top
+    transform: rotate(270deg)
+    border-radius: 100px
+    transition: background-color 0.5s
+    padding: 10px
+    position: absolute
+    right: 20px
+    height: 40px
+    width: 40px
+    z-index: 3
+    background-color: $mains
+    &:hover
+        border: 1px double $links
+        background-color: $buttons
 
 .overline
     display: inline
@@ -128,13 +143,14 @@ body
             color: $hover
             font-size: 22px
     &__button
-        padding: 18px 47px
+        padding: 18px 20px
         border-radius: 10px
         margin-left: 30px
         font-size: 13px
 
 .menu
     background-color: #000
+
     &-block
         display: flex
         justify-content: space-between

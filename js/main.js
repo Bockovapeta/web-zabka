@@ -63,6 +63,35 @@ $(document).ready(function () {
     */
 
 
+    // Back To Top
+
+    $(document).on('click', 'a[href^="#"]', function (e) {
+        // target element id
+        let id = $(this).attr('href');
+
+        // target element
+        let $id = $(id);
+        if ($id.length === 0) {
+            return;
+        }
+
+        // prevent standard hash navigation (avoid blinking in IE)
+        e.preventDefault();
+
+        // top position relative to the document
+        let pos = $id.offset().top;
+
+        // animated top scrolling
+        $('body, html').animate({ scrollTop: pos });
+    });
+
+
+
+
+
+    //Create an anchor tag
+
+
 
     //přidání rolování na slider - obrázky se nám po kliknutí budou přebíhat z jednoho na druhý
     $('.slider').slick({
