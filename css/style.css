@@ -57,6 +57,11 @@ body {
   font-size: 15px;
 }
 
+.atop {
+  position: relative;
+  top: 200px;
+}
+
 .top {
   border-radius: 100px;
   transition: background-color 0.5s;
@@ -73,6 +78,11 @@ body {
 .top:hover {
   border: 1px double #fff236;
   background-color: #acb9f1;
+}
+@media (max-width: 900px) {
+  .top {
+    top: 100px;
+  }
 }
 
 .overline {
@@ -396,7 +406,7 @@ li.slick-active button {
   line-height: 55px;
   font-family: "Museo Sans Bold", sans serif;
   font-weight: 700;
-  margin: 50px 0px 20px 0px;
+  margin: 10px 0px 20px 0px;
 }
 @media (max-width: 1200px) {
   .main-text__title {
