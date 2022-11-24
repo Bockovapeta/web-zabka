@@ -560,9 +560,14 @@ li.slick-active button
 
 .icons
     display: flex
-    justify-content: space-between
     flex-wrap: wrap
+    justify-content: space-between
+    margin: auto
+    @media (max-width: 1200px)
+        width: 600px
     @media (max-width: 900px)
+        width: 300px
+    @media (max-width: 600px)
         display: block
 
 .icon

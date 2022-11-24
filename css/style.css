@@ -732,10 +732,21 @@ li.slick-active button {
 
 .icons {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+@media (max-width: 1200px) {
+  .icons {
+    width: 600px;
+  }
 }
 @media (max-width: 900px) {
+  .icons {
+    width: 300px;
+  }
+}
+@media (max-width: 600px) {
   .icons {
     display: block;
   }
