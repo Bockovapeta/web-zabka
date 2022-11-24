@@ -58,7 +58,6 @@ body {
 }
 
 .top {
-  transform: rotate(270deg);
   border-radius: 100px;
   transition: background-color 0.5s;
   padding: 10px;
@@ -744,10 +743,11 @@ li.slick-active button {
   align-items: center;
   display: flex;
   margin-bottom: 30px;
+  opacity: 0.5;
 }
 .icon__image:hover {
-  transition: 0.5s;
-  border: 3px solid #171ae5;
+  transition: 0.2s;
+  opacity: 1;
 }
 @media (max-width: 768px) {
   .icon__image {
