@@ -63,8 +63,10 @@ $(document).ready(function () {
     */
 
 
-    // Back To Top
 
+
+
+    // Scrolling 
     $(document).on('click', 'a[href^="#"]', function (e) {
         // target element id
         let id = $(this).attr('href');
@@ -84,6 +86,9 @@ $(document).ready(function () {
         // animated top scrolling
         $('body, html').animate({ scrollTop: pos });
     });
+
+
+
 
 
 
