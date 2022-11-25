@@ -59,7 +59,7 @@ body {
 
 .atop {
   position: relative;
-  top: 180px;
+  top: 150px;
 }
 
 .top {
@@ -68,7 +68,7 @@ body {
   padding: 10px;
   position: -webkit-sticky;
   position: sticky;
-  top: 15px;
+  top: 50%;
   left: 95%;
   height: 40px;
   width: 40px;
@@ -78,11 +78,6 @@ body {
 .top:hover {
   border: 1px double #fff236;
   background-color: #acb9f1;
-}
-@media (max-width: 900px) {
-  .top {
-    top: 100px;
-  }
 }
 
 .overline {
@@ -1001,40 +996,16 @@ li.slick-active button {
 }
 
 .footer {
-  position: relative;
+  display: flex;
+  color: white;
+  background: #000;
+  text-align: center;
+  align-items: center;
+  height: 50px;
 }
-@media (max-width: 1500px) {
-  .footer {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-
-.map {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-@media (min-width: 1501px) {
-  .map {
-    max-height: 100%;
-    opacity: 0.6;
-  }
-}
-.map__image {
-  width: 100%;
-}
-@media (min-width: 1501px) {
-  .map__image {
-    width: 50%;
-  }
-}
-@media (max-width: 1500px) {
-  .map {
-    width: 100%;
-    position: relative;
-  }
+.footer p {
+  width: 150px;
+  margin: auto;
 }
 
 .contacts {

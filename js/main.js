@@ -27,6 +27,9 @@ $(document).ready(function () {
 
 
 
+
+
+
     // modální okno
     //var button = $('#button');
     //var modal = $('#modal');
