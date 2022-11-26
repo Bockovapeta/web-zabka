@@ -28,8 +28,8 @@ $(document).ready(function () {
 
     $('.sliders').slick({
         slidesToShow: 3,
-        prevArrow: $('.arrows__left'),
-        nextArrow: $('.arrows__right'),
+        prevArrow: $('.katalogy-arrows__left'),
+        nextArrow: $('.katalogy-arrows__right'),
 
         //odebrání zobrazených obrázků pro užší prostředí např. tablety a pro mobily
         responsive: [

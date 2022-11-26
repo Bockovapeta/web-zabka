@@ -564,18 +564,26 @@ li.slick-active button
         margin-bottom: 100px
         color: $mains
     &__arrows
-        max-width: 120px
         display: flex
-        justify-content: center
-        margin: auto
-        margin-top: 70px
-        padding-bottom: 10px
+        justify-content: space-between
+        margin: 0 20px 0 20px
+        position: relative
+        top: -250px
 
-.arrows__left, .arrows__right
+.katalogy-arrows__left, .katalogy-arrows__right
     cursor: pointer
+    padding: 10px
+    border-radius: 100px
+    transition: background-color 0.5s
+    &:hover
+        border: 1px double $links
+        background-color: $mains
 
 .sliders
-
+    margin: auto
+    display: flex
+    width: 70%
+    justify-content: space-around
     &__item img
         width: 250px
         height: 360px
