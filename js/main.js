@@ -26,7 +26,31 @@ $(document).ready(function () {
 
 
 
+    $('.sliders').slick({
+        slidesToShow: 3,
+        prevArrow: $('.arrows__left'),
+        nextArrow: $('.arrows__right'),
 
+        //odebrání zobrazených obrázků pro užší prostředí např. tablety a pro mobily
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+
+                }
+            },
+            {
+                breakpoint: 760,
+                settings: {
+                    slidesToShow: 1,
+
+                }
+            },
+
+
+        ]
+    });
 
 
 
