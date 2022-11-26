@@ -738,6 +738,7 @@ li.slick-active button {
   color: #fffaae;
 }
 .katalogy__arrows {
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   margin: 0 20px 0 20px;
@@ -757,6 +758,7 @@ li.slick-active button {
 }
 
 .sliders {
+  z-index: 3;
   margin: auto;
   display: flex;
   width: 70%;
@@ -963,7 +965,7 @@ li.slick-active button {
   height: 50px;
 }
 .footer p {
-  width: 150px;
+  width: 200px;
   margin: auto;
 }
 
