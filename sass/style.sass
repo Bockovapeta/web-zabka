@@ -20,7 +20,7 @@ body
 
 .button
     background-color: $buttons
-    color: $accent
+    color: $text-color
     border: none
     +bold
     cursor: pointer
@@ -271,6 +271,7 @@ button
     background-color: #f7ef87
     transition: 0.3s
     text-indent: -9999px
+    color: $text-color
     &:hover
         cursor: pointer
 li.slick-active button
@@ -616,9 +617,6 @@ li.slick-active button
         display: flex
         @media (max-width: 768px)
             flex-direction: column
-
-    &__interview
-        flex-basis: 50%
     &__form
         flex-basis: 50%
         padding-left: 200px
@@ -632,62 +630,16 @@ li.slick-active button
         max-width: 370px
         margin-bottom: 15px
     &__button
-        z-index: 5
         width: 100%
         max-width: 370px
-        display: block
         height: 50px
         margin: 15px auto 30px auto
 
-.interview
-    padding-right: 70px
-    @media (max-width: 1200px)
-        padding-left: 30px
-        padding-right: 0
-    &__title
-        +bold
-        font-size: 22px
-        line-height: 33px
-        margin-bottom: 50px
-        text-align: center
-        @media (max-width: 1200px)
-            font-size: 18px
-            margin-bottom: 40px
-    &__subtitle
-        font-size: 16px
-        margin-bottom: 100px
-        display: block
-        @media (max-width: 1200px)
-            font-size: 14px
-            margin-bottom: 30px
-    &-list
-        list-style-type: none
-        padding: 0
-        &__item
-            display: flex
-            align-items: center
-            margin-bottom: 45px
-            +bold
-
-        &__counter
-            height: 35px
-            width: 35px
-            border: 2px solid $text-color
-            display: inline-block
-            text-align: center
-            line-height: 35px
-            border-radius: 50px
-            margin-right: 30px
-            font-size: 14px
-            @media (max-width: 1200px)
-                margin-right: 20px
-        &__text
-            max-width: 400px
-            font-size: 18px
-            @media (max-width: 1200px)
-                font-size: 14px
-                max-width: 300px
-                text-align: left
+.send
+    text-indent: 0
+    text-align: center
+    display: flex
+    color: $text-color
 
 .form
     &__title
@@ -700,7 +652,7 @@ li.slick-active button
             margin-bottom: 40px
         @media (max-width: 768px)
             padding-top: 90px
-            margin-top: 150px
+            margin-top: 20px
 
     &__description
         font-size: 15px
@@ -709,6 +661,8 @@ li.slick-active button
 .error
     border: 2px solid red
     background: #ff8e8eb6
+.yes
+    color: $links
 
 .footer
     display: flex
@@ -718,24 +672,22 @@ li.slick-active button
     align-items: center
     height: 50px
     p
+        line-height: 1.5
         width: 200px
         margin: auto
 .contacts
-    margin: auto
-    padding-left: 20px
+    margin: auto 20px
+    padding-top: 40px
     @media (min-width: 1501px)
         flex-basis: 50%
-        padding-top: 70px
-        padding-left: 10px
         margin: 50px 10px
-
     &-block
         display: flex
         justify-content: center
         @media (min-width: 1501px)
             justify-content: flex-end
     &-list
-        padding: 0
+        padding: 0 0 0 20px
         list-style-type: none
         &__item
             display: flex
