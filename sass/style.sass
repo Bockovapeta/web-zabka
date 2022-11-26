@@ -607,17 +607,11 @@ li.slick-active button
             line-height: 25px
 
 .brief
-    background-image: url('../img/brief-color-bg.jpg'), url('../img/brief-bg.jpg')
-    background-position: left center, center right
-    background-size: 50% 100%, cover
-    background-repeat: no-repeat, no-repeat
-    padding: 100px 0
+    background: $text-color
+    padding: 20px 0
+    color: $mains
     @media (max-width: 768px)
-        background-image: url('../img/brief-color-bg.jpg'), url('../img/brief-bg.jpg')
-        background-position: top center, center bottom
-        background-size: 100% 50%, cover
-        background-repeat: repeat-x, no-repeat
-        padding: 50px 0
+        padding: 10px 0
     &-block
         display: flex
         @media (max-width: 768px)
@@ -638,10 +632,11 @@ li.slick-active button
         max-width: 370px
         margin-bottom: 15px
     &__button
+        z-index: 5
         width: 100%
         max-width: 370px
         display: block
-        height: 70px
+        height: 50px
         margin: 15px auto 30px auto
 
 .interview
@@ -706,13 +701,6 @@ li.slick-active button
         @media (max-width: 768px)
             padding-top: 90px
             margin-top: 150px
-    &__subtitle
-        font-size: 16px
-        margin-bottom: 50px
-        display: block
-        @media (max-width: 1200px)
-            font-size: 14px
-            margin-bottom: 40px
 
     &__description
         font-size: 15px
@@ -740,15 +728,7 @@ li.slick-active button
         padding-top: 70px
         padding-left: 10px
         margin: 50px 10px
-    &__title
-        +bold
-        font-size: 24px
-        line-height: 33px
-        margin-bottom: 100px
-        @media (max-width: 1500px)
-            text-align: center
-            padding-bottom: 60px
-            margin-bottom: 0
+
     &-block
         display: flex
         justify-content: center
@@ -771,11 +751,12 @@ li.slick-active button
             margin-right: 20px
             padding-right: 60px
         &__text
+            font-size: 25px
             line-height: 1.4
             text-decoration: none
-            color: $text-color
+            color: $mains
             a
-                color: $text-color
+                color: $mains
                 text-decoration: none
                 &:hover
                     text-decoration: underline

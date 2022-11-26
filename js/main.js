@@ -69,25 +69,25 @@ $(document).ready(function () {
 
     // validace formulářů
 
-    /*
-        $('#brief-form').validate({
-            rules: {
-                name: "required",
-                email: {
-                    required: true,
-                    email: true
-                },
-    
-                zprava: "required"
+
+    $('#brief-form').validate({
+        rules: {
+
+            email: {
+                required: true,
+                email: true
             },
-            messages: {
-                name: "Uveďte Vaše jméno",
-                phone: "Uveďte Vaše telefonní číslo",
-                email: "Uveďte Váš email",
-                zprava: "Napište mi zprávu"
-            }
-        });
-    */
+
+            zprava: "required"
+        },
+        messages: {
+
+            phone: "Uveďte Vaše telefonní číslo",
+            email: "Uveďte Váš email",
+            zprava: "Napište mi zprávu"
+        }
+    });
+
 
 
 

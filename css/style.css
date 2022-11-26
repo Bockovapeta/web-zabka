@@ -790,19 +790,13 @@ li.slick-active button {
 }
 
 .brief {
-  background-image: url("../img/brief-color-bg.jpg"), url("../img/brief-bg.jpg");
-  background-position: left center, center right;
-  background-size: 50% 100%, cover;
-  background-repeat: no-repeat, no-repeat;
-  padding: 100px 0;
+  background: #000;
+  padding: 20px 0;
+  color: #fffaae;
 }
 @media (max-width: 768px) {
   .brief {
-    background-image: url("../img/brief-color-bg.jpg"), url("../img/brief-bg.jpg");
-    background-position: top center, center bottom;
-    background-size: 100% 50%, cover;
-    background-repeat: repeat-x, no-repeat;
-    padding: 50px 0;
+    padding: 10px 0;
   }
 }
 .brief-block {
@@ -837,10 +831,11 @@ li.slick-active button {
   margin-bottom: 15px;
 }
 .brief__button {
+  z-index: 5;
   width: 100%;
   max-width: 370px;
   display: block;
-  height: 70px;
+  height: 50px;
   margin: 15px auto 30px auto;
 }
 
@@ -936,17 +931,6 @@ li.slick-active button {
     margin-top: 150px;
   }
 }
-.form__subtitle {
-  font-size: 16px;
-  margin-bottom: 50px;
-  display: block;
-}
-@media (max-width: 1200px) {
-  .form__subtitle {
-    font-size: 14px;
-    margin-bottom: 40px;
-  }
-}
 .form__description {
   font-size: 15px;
 }
@@ -981,20 +965,6 @@ li.slick-active button {
     margin: 50px 10px;
   }
 }
-.contacts__title {
-  font-family: "Museo Sans Bold", sans serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 33px;
-  margin-bottom: 100px;
-}
-@media (max-width: 1500px) {
-  .contacts__title {
-    text-align: center;
-    padding-bottom: 60px;
-    margin-bottom: 0;
-  }
-}
 .contacts-block {
   display: flex;
   justify-content: center;
@@ -1026,12 +996,13 @@ li.slick-active button {
   padding-right: 60px;
 }
 .contacts-list__text {
+  font-size: 25px;
   line-height: 1.4;
   text-decoration: none;
-  color: #000;
+  color: #fffaae;
 }
 .contacts-list__text a {
-  color: #000;
+  color: #fffaae;
   text-decoration: none;
 }
 .contacts-list__text a:hover {
