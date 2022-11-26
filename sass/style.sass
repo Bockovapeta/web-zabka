@@ -564,6 +564,8 @@ li.slick-active button
         padding-top: 40px
         margin-bottom: 100px
         color: $mains
+        @media (max-width: 600px)
+            margin-bottom: 50px
     &__arrows
         z-index: 2
         display: flex
@@ -571,6 +573,8 @@ li.slick-active button
         margin: 0 20px 0 20px
         position: relative
         top: -250px
+        @media (max-width: 600px)
+            top: -110px
 
 .katalogy-arrows__left, .katalogy-arrows__right
     cursor: pointer
@@ -591,6 +595,9 @@ li.slick-active button
         width: 250px
         height: 360px
         margin: auto
+        @media (max-width: 600px)
+            width: 170px
+            height: 250px
 
 .notice
     background-color: $secondary
@@ -688,8 +695,11 @@ li.slick-active button
         @media (min-width: 1501px)
             justify-content: flex-end
     &-list
-        padding: 0 0 0 20px
+        padding-right: 80px
         list-style-type: none
+        @media (max-width: 600px)
+            padding-right: 10px
+            margin: auto
         &__item
             display: flex
             align-items: flex-start
@@ -708,6 +718,8 @@ li.slick-active button
             line-height: 1.4
             text-decoration: none
             color: $mains
+            @media (max-width: 600px)
+                font-size: 22px
             a
                 color: $mains
                 text-decoration: none
