@@ -11,8 +11,8 @@ body
  //   max-width: 100% 
 
 .container
-    max-width: 1200px
-    width: 96%
+    max-width: 1900px
+    width: 98%
     margin: auto
     position: relative
     @media (max-width: 900px)
@@ -111,9 +111,8 @@ body
     background: linear-gradient(0deg, rgba(6,6,1,1) 0%, #eef3b2 59%, #99cbe2 100%)
     &-block
         display: flex
-        justify-content: space-between
+        justify-content: space-around
         align-items: center
-
     &__info
         display: flex
         text-align: right
@@ -123,7 +122,6 @@ body
         justify-content: center
         @media  (max-width: 640px)
             display: none
-
     &__address
         color: $text-color
         font-size: 20px
@@ -152,6 +150,12 @@ body
         border-radius: 10px
         margin-left: 30px
         font-size: 13px
+    &__logo2
+        margin-right: 40px
+        img
+            @media  (max-width: 900px)
+                width: 110px
+                height: 40px
 
 .menu
     background-color: #000
