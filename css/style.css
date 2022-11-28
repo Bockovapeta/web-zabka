@@ -974,9 +974,11 @@ li.slick-active button {
 .contacts-list__text a {
   color: #fffaae;
   text-decoration: none;
+  transition: all 0.3s;
 }
 .contacts-list__text a:hover {
   text-decoration: underline;
+  color: #171ae5;
 }
 
 .after3 {
