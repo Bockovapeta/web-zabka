@@ -308,9 +308,9 @@ body {
     z-index: 0;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1800px) {
   .portfolio {
-    max-width: 1500px;
+    max-width: 1700px;
     margin: auto;
   }
 }
