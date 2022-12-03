@@ -196,12 +196,11 @@ body {
   font-size: 13px;
 }
 .header__logo2 {
-  margin-right: 40px;
+  margin: 0 20px;
 }
 @media (max-width: 900px) {
   .header__logo2 img {
-    width: 110px;
-    height: 40px;
+    display: none;
   }
 }
 
@@ -296,6 +295,10 @@ body {
   }
 }
 
+.hlavni {
+  background-color: black;
+}
+
 .portfolio {
   max-width: 100%;
   padding: 0;
@@ -303,6 +306,12 @@ body {
 @media (max-width: 900px) {
   .portfolio {
     z-index: 0;
+  }
+}
+@media (min-width: 1600px) {
+  .portfolio {
+    max-width: 1500px;
+    margin: auto;
   }
 }
 .portfolio__title {
