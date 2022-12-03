@@ -22,14 +22,14 @@ body {
 }
 
 .container {
-  max-width: 1900px;
-  width: 98%;
+  max-width: 2000px;
+  width: 100%;
   margin: auto;
   position: relative;
 }
 @media (max-width: 900px) {
   .container {
-    width: 95%;
+    width: 98%;
   }
 }
 
@@ -192,13 +192,15 @@ body {
 .header__button {
   padding: 18px 20px;
   border-radius: 10px;
-  margin-left: 30px;
+  margin-left: 25px;
+  margin-right: 5px;
   font-size: 13px;
+  text-align: center;
 }
 .header__logo2 {
-  margin: 0 20px;
+  margin: 0 15px;
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .header__logo2 img {
     display: none;
   }
