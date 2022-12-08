@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://www.lm-wooden.cz/sitemap.xml
+Sitemap: https://www.zabkatools.cz/sitemap.xml
