@@ -72,7 +72,7 @@ $(document).ready(function () {
 
     $('#brief-form').validate({
         rules: {
-            username: "required",
+            name: "required",
             email: {
                 required: true,
                 email: true
@@ -81,8 +81,7 @@ $(document).ready(function () {
             zprava: "required"
         },
         messages: {
-            username: "Uveďte vaše jméno",
-            phone: "Uveďte Vaše telefonní číslo",
+            name: "Uveďte vaše jméno",
             email: "Uveďte Váš email",
             zprava: "Napište mi zprávu"
         }
