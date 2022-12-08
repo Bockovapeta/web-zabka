@@ -927,7 +927,7 @@ li.slick-active button {
 }
 
 .contacts {
-  margin: auto 30px;
+  margin: auto 10px;
   padding-top: 20px;
   padding-left: 5px;
 }
@@ -954,6 +954,7 @@ li.slick-active button {
 @media (max-width: 600px) {
   .contacts-list {
     padding-right: 10px;
+    padding-left: 10px;
     margin: auto;
   }
 }
