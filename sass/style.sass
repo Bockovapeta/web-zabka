@@ -631,12 +631,13 @@ li.slick-active button
     @media (max-width: 768px)
         padding: 10px 0
     &-block
+        margin: auto
         display: flex
         @media (max-width: 768px)
             flex-direction: column
     &__form
-        flex-basis: 50%
-        padding-left: 200px
+        flex-basis: 80%
+        padding-left: 50px
         text-align: center
         @media (max-width: 1200px)
             padding-left: 30px
@@ -694,11 +695,14 @@ li.slick-active button
         width: 200px
         margin: auto
 .contacts
-    margin: auto 20px
-    padding-top: 40px
+    margin: auto 30px
+    padding-top: 20px
+    padding-left: 5px
     @media (min-width: 1501px)
         flex-basis: 50%
         margin: 50px 10px
+        padding-top: 0px
+
     &-block
         display: flex
         justify-content: center
@@ -711,8 +715,7 @@ li.slick-active button
             padding-right: 10px
             margin: auto
         &__item
-            display: flex
-            align-items: flex-start
+            display: inline-block
             margin-bottom: 40px
             strong
                 +bold
@@ -731,7 +734,7 @@ li.slick-active button
             @media (max-width: 600px)
                 font-size: 22px
             a
-                color: $mains
+                color: white
                 text-decoration: none
                 transition: all 0.3s
                 &:hover

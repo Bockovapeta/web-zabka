@@ -837,6 +837,7 @@ li.slick-active button {
   }
 }
 .brief-block {
+  margin: auto;
   display: flex;
 }
 @media (max-width: 768px) {
@@ -845,8 +846,8 @@ li.slick-active button {
   }
 }
 .brief__form {
-  flex-basis: 50%;
-  padding-left: 200px;
+  flex-basis: 80%;
+  padding-left: 50px;
   text-align: center;
 }
 @media (max-width: 1200px) {
@@ -926,13 +927,15 @@ li.slick-active button {
 }
 
 .contacts {
-  margin: auto 20px;
-  padding-top: 40px;
+  margin: auto 30px;
+  padding-top: 20px;
+  padding-left: 5px;
 }
 @media (min-width: 1501px) {
   .contacts {
     flex-basis: 50%;
     margin: 50px 10px;
+    padding-top: 0px;
   }
 }
 .contacts-block {
@@ -955,8 +958,7 @@ li.slick-active button {
   }
 }
 .contacts-list__item {
-  display: flex;
-  align-items: flex-start;
+  display: inline-block;
   margin-bottom: 40px;
 }
 .contacts-list__item strong {
@@ -983,7 +985,7 @@ li.slick-active button {
   }
 }
 .contacts-list__text a {
-  color: #fffaae;
+  color: white;
   text-decoration: none;
   transition: all 0.3s;
 }
