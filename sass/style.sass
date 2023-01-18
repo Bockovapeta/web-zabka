@@ -152,6 +152,7 @@ body
         margin-right: 5px
         font-size: 13px
         text-align: center
+        background-color: #c7c7c7
     &__logo2
         margin: 0 15px
         img
@@ -234,7 +235,7 @@ body
     @media (max-width: 900px)
         z-index: 0
     @media (min-width: 1800px)
-        max-width: 1700px
+        max-width: 1600px
         margin: auto
 
     &__title
@@ -698,6 +699,8 @@ li.slick-active button
     margin: auto 10px
     padding-top: 20px
     padding-left: 5px
+    display: flex
+    justify-content: center
     @media (min-width: 1501px)
         flex-basis: 50%
         margin: 50px 10px
@@ -716,7 +719,7 @@ li.slick-active button
             padding-left: 10px
             margin: auto
         &__item
-            display: inline-block
+
             margin-bottom: 40px
             strong
                 +bold
@@ -728,12 +731,12 @@ li.slick-active button
             margin-right: 20px
             padding-right: 60px
         &__text
-            font-size: 25px
+            font-size: 22px
             line-height: 1.4
             text-decoration: none
             color: $mains
             @media (max-width: 600px)
-                font-size: 22px
+                font-size: 20px
             a
                 color: white
                 text-decoration: none
