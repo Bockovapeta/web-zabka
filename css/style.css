@@ -207,6 +207,16 @@ body {
   }
 }
 
+.logos {
+  width: 350px;
+}
+@media (max-width: 950px) {
+  .logos {
+    width: 240px;
+    margin-left: 10px;
+  }
+}
+
 .menu {
   background-color: #000;
 }
